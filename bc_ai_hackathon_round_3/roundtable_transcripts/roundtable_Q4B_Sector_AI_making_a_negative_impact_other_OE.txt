@@ -1,0 +1,33 @@
+<CLUSTER:Cluster 2> Education, education, and—let me be repetitive on purpose—education. I’m seeing classrooms bend around AI shortcuts. Academia gets hit too. Then politics: factual news will be faked, and the public square gets poisoned. Add privacy: is it going to snoop on every aspect of our lives? That scares me almost as much as scams and criminal enterprises weaponizing this stuff.
+
+<CLUSTER:Cluster 1> This isn’t a fair ask for such a huge question. Honestly? All of them. AI is evil and will do harm to everyone and everything it touches. You’ll see it in the economy, in public safety, in social media. In education—student plagiarism, cheating on exams—people ending up unqualified. And it’s already being used as a weapon against women. Plus loneliness, as we swap real connection for machine “social.”
+
+<CLUSTER:Cluster 0> I’m not sure, and that uncertainty is part of it. Anxiety in some parts of society will spike. Vulnerable people—lower-income communities, those already struggling—could be hit hardest. Disinformation, general fake videos, endless conspiracy theories: our perception of what’s real gets shredded. What is real and what isn’t? Politics and news reporting become untrustworthy. That messes with mental health.
+
+<CLUSTER:Cluster 3> Everywhere it’s used, there’s risk. Have you seen Terminator? I’m half-joking, half-not. Jobs—emphasis on jobs, not the economy as a whole—get undercut. Military weapons and robots, even police applications, raise the stakes. Cyber hijackers and scammers will swarm. And the social interface—how humans interact—changes in ways we don’t understand. The unknown is the scariest part.
+
+<CLUSTER:Cluster 2> On scams and crime, agreed. Criminal enterprises will scale with automation. Deepfakes make “factual” news indistinguishable from fiction. In construction and industry, bad AI-generated designs could slip through; that’s not an abstract fear when lives depend on structural integrity.
+
+<CLUSTER:Cluster 1> Exactly—public safety isn’t just online. If fake news drives panic, if bad outputs guide real-world decisions, people get hurt. And I’m going to say it again: the erosion of our basic foundational understanding—critical thinking, deductive reasoning—society’s overall intelligence gets dimmed. We’re training a generation to copy-paste.
+
+<CLUSTER:Cluster 0> That dovetails with what I’m worried about: humans get dimmed down due to non-critical thinking. I’ve personally felt that tug to outsource thought. Multiply that by millions, and you get a population more suggestible to misinformation. The mental health of vulnerable individuals suffers when reality feels unstable.
+
+<CLUSTER:Cluster 3> And when you’re unsure what’s real, you’re easier to con. Scamming people goes from one-on-one to industrial scale. Pair that with cyber hijackers targeting essential systems and we’re in trouble. Meanwhile, robots and algorithms in military and police contexts—once those are deployed at scale, rolling them back isn’t simple.
+
+<CLUSTER:Cluster 2> Politics will be reshaped by that. Two clicks and you’ve got a plausible video that never happened. Also, I need to put this on the table: I’m concerned by reports that AI is being used in wartime targeting—Israel using AI in ways some call genocidal. That alarms me about state-level misuse, period. And on the home front, our personal privacy: constant surveillance and data scraping feel inevitable unless we push back.
+
+<CLUSTER:Cluster 1> State power, platform power—either way, people get harmed. When you say “surveillance,” I hear “social media amplifiers” driving isolation and hostility. Loneliness rises as we replace people with prompts. And yes, plagiarism isn’t victimless; it corrodes professions when cheaters become “experts.”
+
+<CLUSTER:Cluster 0> The “what is real” problem is the through-line. If politics and news reporting can’t be trusted, anxiety rises, communities fracture, and lower-income groups—who have less margin for error—bear the brunt. I keep coming back to misuse and confusion, even as I’m not certain exactly where the worst will land.
+
+<CLUSTER:Cluster 3> I’ll be the designated doom voice: everything, everywhere. I don’t mean apocalypse tomorrow, just that the attack surface is total. Jobs disappear unevenly, the human race gets nudged into new dependencies, and our social interaction morphs into talking to machines about each other. The unknown is a risk category on its own.
+
+<CLUSTER:Cluster 2> Practical note on education: it’s not just students cheating, it’s the downstream effect—professionals entering fields without the competence the credential implies. Multiply by seven if you like; it’s my top three concerns rolled into one.
+
+<CLUSTER:Cluster 1> That’s what I said—unqualified people doing consequential work. And women already getting targeted by AI as a weapon—there’s nothing speculative about that for those experiencing it.
+
+<CLUSTER:Cluster 0> Which loops back to mental health. Targeted harassment, deepfakes, conspiracies—people’s sense-making collapses.
+
+<CLUSTER:Cluster 3> And when sense-making collapses, so does resilience against cyberattacks, propaganda, and all the rest. Then we lean harder on AI to cope, and the cycle tightens.
+
+Synthesis: Across participants, the biggest perceived negative impacts cluster around education (cheating, plagiarism, degraded competence), information integrity (misinformation, deepfakes, politicized and untrustworthy news), privacy and surveillance, and crime (scams, criminal enterprises, cyber hijacking). Several emphasize public safety risks in industry and construction, as well as state and military uses (including policing and wartime targeting). Social consequences include loneliness, altered social interaction, and mental health strain, with vulnerable and lower-income communities seen as disproportionately affected. There is concern about harms specifically against women. Views diverge on scope—some see targeted domains, others foresee pervasive, system-wide erosion—with uncertainty and the “unknown” itself noted as a major risk.

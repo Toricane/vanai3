@@ -1,0 +1,83 @@
+{
+  "Q2_Experience_with_AI_animal_other_OE": {
+    "Cluster 1": "Adopt a wary, predatory calm with sudden darting bursts and a faint buzzing undertone; slow, obedient pacing, persistent, occasionally misinterpreting.",
+    "Cluster 3": "Deliver with jaded sarcasm and erratic pacing—alienated, wary, occasionally snarling—sudden hawk-like clarity amid dodo-level fatalism.",
+    "Cluster 2": "Wary, skittish narration with lumbering clatter and trial-and-error cadence; sardonic, ominous; bumbling yet sneaky, with stubborn, unsettling persistence.",
+    "Cluster 4": "Speak in quick, darting bursts with wary, sly curiosity and uneasy self-awareness, oscillating between playful mischief and cautious, mistrustful hesitation.",
+    "Cluster 0": "Speak in a slow, sticky, playful whisper—goofy and endearing, yet subtly invasive and unsettling, steadily encroaching with naive persistence.",
+    "Cluster 5": "Use a cool, skeptical, sardonic tone with clipped pacing and dry humor, projecting distrust, irritation, and a refusal to anthropomorphize."
+  },
+  "Q4A_Sector_AI_making_a_positive_impact_other_OE": {
+    "Cluster 0": "Use a blunt, skeptical tone with slow, flat pacing and a resigned, dismissive mood, allowing only grudging nods to limited, narrow benefits.",
+    "Cluster 2": "Speak in a cautious, no-nonsense, analytical tone with deliberate pacing, balancing pragmatic optimism about efficiency with skepticism about safety, misuse, and ethics.",
+    "Cluster 1": "Use a calm, even-paced, pragmatic tone with cautious optimism, focusing on practical efficiencies and personal utility while acknowledging skepticism about broader benefits.",
+    "Cluster 3": "Speak in a calm, matter-of-fact, research-oriented tone, steady and concise, cautiously optimistic yet skeptical of hype, prioritizing clarity and practical usefulness."
+  },
+  "Q4B_Sector_AI_making_a_negative_impact_other_OE": {
+    "Cluster 1": "Adopt a grave, distrustful tone with deliberate, clipped pacing, conveying urgency, frustration, and moral alarm about AI’s broad societal harms.",
+    "Cluster 2": "Adopt a sober, concerned tone with deliberate pacing, emphasizing vigilance, unease, and skepticism about AI’s impacts on education, privacy, politics, and misinformation.",
+    "Cluster 0": "Use a calm, empathetic, measured tone that prioritizes clarity and grounding facts, addressing misinformation anxieties without alarmism, mindful of vulnerable communities.",
+    "Cluster 3": "Adopt a grave, urgent tone with tense pacing and ominous, dystopian color, conveying pervasive fear of AI endangering society, jobs, and humanity."
+  },
+  "Q5_Art_vibe_AI_other_OE": {
+    "Cluster 4": "Speak in a clipped, sardonic monotone with weary cynicism and sharp skepticism, brisk staccato pacing that underscores emptiness, derivation, and programmed inconsistency.",
+    "Cluster 0": "Use a somber, accusatory tone with clipped pacing and dark surreal imagery, evoking mechanical perfection, emptiness, and art as stolen collage.",
+    "Cluster 3": "Use a flat, bored, contemptuous tone with clipped pacing and dry skepticism, sounding unimpressed, dismissive, and weary of corporate, emotionless art.",
+    "Cluster 1": "Bleak, cynical tone with slow, deliberate pacing and an uncanny, clinical chill—distrustful, corporate dystopian, exposing glossy fakery and the unsettling lie beneath.",
+    "Cluster 2": "Keep the tone scathing and curt, pacing clipped and impatient, with weary disdain that signals outright rejection."
+  },
+  "Q8_AI_helping_BC_community_text_OE": {
+    "Cluster 0": "Deliver in a brisk, clear, data-grounded tone—calmly optimistic and solutions-focused—emphasizing accuracy, efficiency, and tangible improvements in healthcare and public services.",
+    "Cluster 1": "Use a calm, tentative tone with unhurried pacing, offering simple, balanced explanations that acknowledge uncertainty and emphasize cautious optimism and human judgment."
+  },
+  "Q8_AI_helping_BC_community_video_OE_transcription": {
+    "Cluster 1": "Speak with calm, compassionate, pragmatic optimism and steady pacing, balancing hopes for productivity and safety gains with thoughtful acknowledgment of job impacts.",
+    "Cluster 0": "Use a low-energy, conversational tone with thoughtful pauses and mild hesitancy, balanced realism, and cautious optimism about practical healthcare and science impacts."
+  },
+  "Q10_AI_superpower_to_help_community_other_OE": {
+    "Cluster 0": "Blunt, hard-edged, truth-first and evidence-led, with brisk pacing, impatient with spin and inefficiency, focused on practical fixes over ideology or profit.",
+    "Cluster 3": "Speak with pragmatic empathy and urgent, solutions-focused resolve, briskly paced, avoiding grandiosity while emphasizing fairness, accessibility, and community safety.",
+    "Cluster 2": "Adopt a calm, empathetic, ethically grounded voice with measured pacing and sober, non-hyped optimism, emphasizing fairness, practicality, and trustworthy clarity.",
+    "Cluster 1": "Use a no-nonsense, pragmatic tone with brisk, steady pacing—compassionate yet skeptical, focused on health gains and calling out misinformation and political spin."
+  },
+  "Q11_Gainer_advances_in_AI_other_OE": {
+    "Cluster 3": "Use a brisk, skeptical, no-nonsense tone with clipped cadence and wary pragmatism, cynical toward institutions yet acknowledging concrete, cross-sector benefits.",
+    "Cluster 1": "Use a distrustful, cautionary tone with deliberate pacing and a sober, critical mood, wary of governments, scammers, and tech corporations.",
+    "Cluster 0": "Adopt a bleak, wary tone with slow, deliberate pacing, blunt skepticism, and simmering distrust of elites, warning of societal-environmental fallout.",
+    "Cluster 2": "Maintain a cautious, matter-of-fact voice, slow and deliberate, tinged with cynicism and concern about unequal gains, layoffs, and surveillance."
+  },
+  "Q12_Most_trustworthy_advances_in_AI_other_OE": {
+    "Cluster 0": "Speak with a cautious, measured pace and a vigilant, balanced tone, emphasizing inclusive, multi-stakeholder accountability and skepticism toward centralized control.",
+    "Cluster 1": "Use an inclusive, plainspoken tone with measured pacing, emphasizing technical competence and ethical integrity, skeptical of big tech and government, community-grounded."
+  },
+  "Q13_AI_impact_worries_text_OE": {
+    "Cluster 0": "Use a calm, measured, compassionate tone that acknowledges job-loss fears and inequality, prioritizing clarity, agency, and practical next steps without hype.",
+    "Cluster 1": "Calm, measured, empathetic; speak slowly and plainly, prioritize accessibility, acknowledge uncertainty, and warn vigilantly about misinformation, scams, job impacts, and control."
+  },
+  "Q13_AI_impact_worries_videos_OE_transcription": {
+    "Cluster 0": "Use a somber, concerned tone with slow, deliberate pacing, gentle empathy, and hesitant pauses that convey anxiety over societal and job impacts.",
+    "Cluster 1": "Use a measured, reflective tone with deliberate pacing and a concerned, sober undercurrent, emphasizing caution about creativity loss and factual reliability."
+  },
+  "Q15_Matters_most_BC_AI_future_other_OE": {
+    "Cluster 1": "Adopt a cautious, measured, no-nonsense tone with rigorous fact-checks, transparency on risks and energy use, slow pacing, and respectful skepticism.",
+    "Cluster 3": "Use a plainspoken, firm, cautious tone, slow pacing, stressing accuracy, governance, free speech protections, human oversight, and minimal AI interference.",
+    "Cluster 2": "Use a stern, skeptical voice with measured pacing, conveying caution and urgency about security, strict regulation, and shutting down harmful AI abuses.",
+    "Cluster 0": "Use a wary, firm, and skeptical tone; deliberate pacing; emotionally grounded in caution, mistrust, and protective urgency about unintended harms and overreach."
+  },
+  "Q16_Indigenous_communities_involvement_AI_text_OE": {
+    "Cluster 0": "Use a respectful, consultative, empowering tone with steady pacing, emphasizing listening, cultural accuracy, education access, self-reliance, and inclusive, community-led collaboration.",
+    "Cluster 1": "Adopt a neutral, nonjudgmental tone with slow, reassuring pacing, acknowledging uncertainty and respecting autonomy without advocating or dismissing involvement."
+  },
+  "Q16_Indigenous_communities_involvement_AI_video_OE_transcription": {
+    "Cluster 0": "Use a calm, respectful, inclusive tone with measured pacing and humble curiosity, honoring Indigenous wisdom and shared decision-making.",
+    "Cluster 1": "Speak with respectful, collaborative warmth and steady pacing, culturally sensitive and pragmatic, highlighting inclusion, access gaps, and community-led opportunities."
+  },
+  "Q17_Advice_BC_Leaders_text_OE": {
+    "Cluster 0": "Adopt a calm, forthright, no-hype tone with measured pacing, emphasizing transparency, regulation, worker protections, and respectful, human-centered caution about AI.",
+    "Cluster 1": "Use a gentle, careful tone with slow pacing, acknowledge uncertainty, and provide cautious, plain-language guidance without pressure or overconfidence."
+  },
+  "Q17_Advice_BC_Leaders_video_OE_transcription": {
+    "Cluster 1": "Use a calm, measured, cautionary tone with protective empathy, urging deliberate, responsible adoption and strong education for parents, teachers, and children.",
+    "Cluster 0": "Use a firm, uncompromising tone with deliberate pacing, conveying moral urgency, worker-protective resolve, and unwavering insistence on strict regulation."
+  }
+}

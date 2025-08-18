@@ -41,6 +41,32 @@
             margin-bottom: 40px;
             line-height: 1.6;
         }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+            margin: 10px 0 50px 0;
+        }
+        .feature-card {
+            background: rgba(255, 255, 255, 0.18);
+            border: 1px solid rgba(255,255,255,0.28);
+            border-radius: 18px;
+            padding: 24px 26px 26px 26px;
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: blur(6px);
+            box-shadow: 0 6px 28px -6px rgba(20,10,60,0.45);
+            transition: background .35s ease, transform .35s ease;
+        }
+        .feature-card:hover { background: rgba(255,255,255,0.28); transform: translateY(-4px); }
+        .feature-card h3 { margin-top:0; margin-bottom:12px; font-size:1.3em; }
+        .feature-badge {
+            display:inline-block; font-size:.65em; letter-spacing:.8px; text-transform:uppercase; background:#ff6b6b; color:#fff; padding:4px 10px; border-radius:20px; margin-left:10px; box-shadow:0 2px 6px -2px rgba(0,0,0,.5);
+        }
+        .feature-points { list-style: none; padding-left:0; margin:14px 0 0 0; }
+        .feature-points li { margin:4px 0; font-size:.9em; display:flex; gap:6px; }
+        .feature-points li span.icon { opacity:.8; }
+        .cta-note { font-size:.85em; opacity:.85; margin-top:14px; }
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -85,6 +111,14 @@
             transform: scale(1.05);
             box-shadow: 0 6px 20px rgba(0,0,0,0.3);
         }
+        .card-stats {
+            font-size: 0.65em;
+            letter-spacing: .5px;
+            text-transform: uppercase;
+            opacity: .75;
+            margin: -4px 0 12px 0;
+            font-weight: 600;
+        }
         .methodology {
             background: rgba(255, 255, 255, 0.1);
             padding: 25px;
@@ -127,6 +161,75 @@
                     <strong>How to explore:</strong>
                     Click on any visualization below to dive into the 3D interactive plots. Rotate, zoom, and hover over points to discover the authentic voices and perspectives of BC residents.
                 </p>
+                <p>
+                    🎧
+                    <strong>New in this version:</strong> Every question page now also includes an
+                    <em>AI‑generated roundtable dialogue</em>
+                    between cluster "representatives" (synthetic voices derived from thematic groupings of responses) followed by an automatically generated synthesis summary.
+                </p>
+            </div>
+            <!-- Core Features Overview -->
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>🗺️ Semantic Maps
+                        <span class="feature-badge">Core Feature 1</span>
+                    </h3>
+                    <p style="margin:0 0 10px 0; opacity:.95;">
+                        3D t‑SNE landscapes of response embeddings let you visually browse the conceptual terrain of what people said.
+                    </p>
+                    <ul class="feature-points">
+                        <li>
+                            <span class="icon">📌</span>
+                            <span>Each point = a unique textual response (aggregated by identical text, sized by frequency).</span>
+                        </li>
+                        <li>
+                            <span class="icon">🎨</span>
+                            <span>Colors = data‑driven clusters (K‑Means, silhouette-optimized) of semantically similar ideas.</span>
+                        </li>
+                        <li>
+                            <span class="icon">🧭</span>
+                            <span>Hover for raw wording + cluster label; rotate & zoom to see structural patterns.</span>
+                        </li>
+                        <li>
+                            <span class="icon">📈</span>
+                            <span>Size uses cube‑root scaling so very frequent responses stand out without dominating.</span>
+                        </li>
+                    </ul>
+                    <p class="cta-note">Open any question below to explore its 3D semantic map.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🗣️ Roundtable Dialogues
+                        <span class="feature-badge">Core Feature 2</span>
+                    </h3>
+                    <p style="margin:0 0 10px 0; opacity:.95;">
+                        A generated conversation between cluster personas lets you hear contrasting themes as if the ideas were debating each other.
+                    </p>
+                    <ul class="feature-points">
+                        <li>
+                            <span class="icon">🤝</span>
+                            <span>One synthetic voice per cluster; tone & style guided by that cluster’s response vibe.</span>
+                        </li>
+                        <li>
+                            <span class="icon">🔄</span>
+                            <span>Alternating lines trace tensions, agreements, and unique contributions.</span>
+                        </li>
+                        <li>
+                            <span class="icon">🎧</span>
+                            <span>Per‑line text‑to‑speech (distinct voices) + transcript highlighting while playing.</span>
+                        </li>
+                        <li>
+                            <span class="icon">🧪</span>
+                            <span>Final
+                                <em>Synthesis</em> line summarizes convergence vs. unresolved friction.
+                            </span>
+                        </li>
+                        <li>
+                            <span class="icon">⚙️</span>
+                            <span>Speed control, auto‑scroll, keyboard shortcuts (Space / ← / → / R).</span>
+                        </li>
+                    </ul>
+                    <p class="cta-note">Scroll below the 3D plot on a question page to access its dialogue module.</p>
+                </div>
             </div>
             <div class="stats">
                 <div class="stat">
@@ -150,107 +253,165 @@
                 <div class="visualization-card">
                     <div class="card-title">🎨 AI & Art Perspectives</div>
                     <div class="card-description">How do BC residents feel about AI's role in creative fields and artistic expression?</div>
+                    <div class="card-stats" data-question="Q5_Art_vibe_AI_other_OE">Loading…</div>
                     <a href="tsne_visualizations_3d_silhouette_focus_sized/page_Q5_Art_vibe_AI_other_OE.html" class="view-button">Explore Creativity →</a>
                 </div>
                 <div class="visualization-card">
                     <div class="card-title">🏥 AI Helping Communities</div>
                     <div class="card-description">Text responses about how AI can help British Columbia communities thrive.</div>
+                    <div class="card-stats" data-question="Q8_AI_helping_BC_community_text_OE">Loading…</div>
                     <a href="tsne_visualizations_3d_silhouette_focus_sized/page_Q8_AI_helping_BC_community_text_OE.html" class="view-button">View Community Impact →</a>
                 </div>
                 <div class="visualization-card">
                     <div class="card-title">🎥 Community Video Insights</div>
                     <div class="card-description">Video transcriptions about AI's potential to help BC communities.</div>
+                    <div class="card-stats" data-question="Q8_AI_helping_BC_community_video_OE_transcription">Loading…</div>
                     <a href="tsne_visualizations_3d_silhouette_focus_sized/page_Q8_AI_helping_BC_community_video_OE_transcription.html" class="view-button">Watch Perspectives →</a>
                 </div>
                 <div class="visualization-card">
                     <div class="card-title">⚡ AI Superpowers</div>
                     <div class="card-description">If AI had superpowers, how would British Columbians want them used for their communities?</div>
+                    <div class="card-stats" data-question="Q10_AI_superpower_to_help_community_other_OE">Loading…</div>
                     <a href="tsne_visualizations_3d_silhouette_focus_sized/page_Q10_AI_superpower_to_help_community_other_OE.html" class="view-button">Explore Superpowers →</a>
                 </div>
                 <div class="visualization-card">
                     <div class="card-title">😰 AI Impact Worries</div>
                     <div class="card-description">What concerns do BC residents have about AI's impact on society and their lives?</div>
+                    <div class="card-stats" data-question="Q13_AI_impact_worries_text_OE">Loading…</div>
                     <a href="tsne_visualizations_3d_silhouette_focus_sized/page_Q13_AI_impact_worries_text_OE.html" class="view-button">Understand Concerns →</a>
                 </div>
                 <div class="visualization-card">
                     <div class="card-title">🎬 Video Worries</div>
                     <div class="card-description">Video transcriptions of British Columbians expressing their AI-related worries.</div>
+                    <div class="card-stats" data-question="Q13_AI_impact_worries_videos_OE_transcription">Loading…</div>
                     <a href="tsne_visualizations_3d_silhouette_focus_sized/page_Q13_AI_impact_worries_videos_OE_transcription.html" class="view-button">Hear Concerns →</a>
                 </div>
                 <div class="visualization-card">
                     <div class="card-title">🏛️ Advice to BC Leaders</div>
                     <div class="card-description">What guidance do citizens want to give BC leaders about AI governance and policy?</div>
+                    <div class="card-stats" data-question="Q17_Advice_BC_Leaders_text_OE">Loading…</div>
                     <a href="tsne_visualizations_3d_silhouette_focus_sized/page_Q17_Advice_BC_Leaders_text_OE.html" class="view-button">Read Advice →</a>
                 </div>
                 <div class="visualization-card">
                     <div class="card-title">🎙️ Leadership Video Messages</div>
                     <div class="card-description">Video transcriptions of advice and messages for BC's political leaders.</div>
+                    <div class="card-stats" data-question="Q17_Advice_BC_Leaders_video_OE_transcription">Loading…</div>
                     <a href="tsne_visualizations_3d_silhouette_focus_sized/page_Q17_Advice_BC_Leaders_video_OE_transcription.html" class="view-button">Listen to Voices →</a>
                 </div>
                 <div class="visualization-card">
                     <div class="card-title">🔮 BC's AI Future</div>
                     <div class="card-description">What matters most to British Columbians when thinking about the province's AI future?</div>
+                    <div class="card-stats" data-question="Q15_Matters_most_BC_AI_future_other_OE">Loading…</div>
                     <a href="tsne_visualizations_3d_silhouette_focus_sized/page_Q15_Matters_most_BC_AI_future_other_OE.html" class="view-button">Shape the Future →</a>
                 </div>
                 <div class="visualization-card">
                     <div class="card-title">🏔️ Indigenous AI Involvement</div>
                     <div class="card-description">Perspectives on how Indigenous communities should be involved in BC's AI development.</div>
+                    <div class="card-stats" data-question="Q16_Indigenous_communities_involvement_AI_text_OE">Loading…</div>
                     <a href="tsne_visualizations_3d_silhouette_focus_sized/page_Q16_Indigenous_communities_involvement_AI_text_OE.html" class="view-button">Honor Voices →</a>
                 </div>
                 <div class="visualization-card">
                     <div class="card-title">🎥 Indigenous Video Perspectives</div>
                     <div class="card-description">Video insights about Indigenous communities and AI in British Columbia.</div>
+                    <div class="card-stats" data-question="Q16_Indigenous_communities_involvement_AI_video_OE_transcription">Loading…</div>
                     <a href="tsne_visualizations_3d_silhouette_focus_sized/page_Q16_Indigenous_communities_involvement_AI_video_OE_transcription.html" class="view-button">Learn More →</a>
                 </div>
                 <div class="visualization-card">
                     <div class="card-title">✅ Positive AI Sectors</div>
                     <div class="card-description">Which sectors do BC residents think AI is making a positive impact in?</div>
+                    <div class="card-stats" data-question="Q4A_Sector_AI_making_a_positive_impact_other_OE">Loading…</div>
                     <a href="tsne_visualizations_3d_silhouette_focus_sized/page_Q4A_Sector_AI_making_a_positive_impact_other_OE.html" class="view-button">See Positives →</a>
                 </div>
                 <div class="visualization-card">
                     <div class="card-title">❌ Negative AI Sectors</div>
                     <div class="card-description">Where do British Columbians see AI making negative impacts on society?</div>
+                    <div class="card-stats" data-question="Q4B_Sector_AI_making_a_negative_impact_other_OE">Loading…</div>
                     <a href="tsne_visualizations_3d_silhouette_focus_sized/page_Q4B_Sector_AI_making_a_negative_impact_other_OE.html" class="view-button">Examine Negatives →</a>
                 </div>
                 <div class="visualization-card">
                     <div class="card-title">🏆 Who Benefits from AI</div>
                     <div class="card-description">Who do BC residents think gains the most from advances in artificial intelligence?</div>
+                    <div class="card-stats" data-question="Q11_Gainer_advances_in_AI_other_OE">Loading…</div>
                     <a href="tsne_visualizations_3d_silhouette_focus_sized/page_Q11_Gainer_advances_in_AI_other_OE.html" class="view-button">Identify Winners →</a>
                 </div>
                 <div class="visualization-card">
                     <div class="card-title">🛡️ Most Trustworthy AI</div>
                     <div class="card-description">What AI applications do British Columbians trust the most?</div>
+                    <div class="card-stats" data-question="Q12_Most_trustworthy_advances_in_AI_other_OE">Loading…</div>
                     <a href="tsne_visualizations_3d_silhouette_focus_sized/page_Q12_Most_trustworthy_advances_in_AI_other_OE.html" class="view-button">Build Trust →</a>
                 </div>
                 <div class="visualization-card">
                     <div class="card-title">🦎 AI Experience Stories</div>
                     <div class="card-description">Personal descriptions of how BC residents relate to and experience AI technology.</div>
+                    <div class="card-stats" data-question="Q2_Experience_with_AI_animal_other_OE">Loading…</div>
                     <a href="tsne_visualizations_3d_silhouette_focus_sized/page_Q2_Experience_with_AI_animal_other_OE.html" class="view-button">Share Experiences →</a>
                 </div>
             </div>
             <div class="methodology">
-                <h3>🔬 Methodology</h3>
+                <h3>🔬 Methodology & Narrative Pipeline</h3>
+                <p style="margin-top:0;">The project blends unsupervised semantic mapping with generative narrative synthesis. Below is the end‑to‑end flow from raw free‑text to interactive 3D maps and voiced roundtable dialogues.</p>
                 <p>
-                    <strong>Semantic Embeddings:</strong>
-                    Each text response was converted to a 3,072-dimensional vector using OpenAI's text-embedding-3-large model, capturing semantic meaning.
+                    <strong>1. Ingestion & Cleaning:</strong> Open‑ended survey answers are de‑duplicated by exact text (frequency retained) and basic filters remove empty / placeholder values.
                 </p>
                 <p>
-                    <strong>Dimensionality Reduction:</strong>
-                    t-SNE algorithm reduced high-dimensional embeddings to 3D coordinates while preserving local structure and clustering patterns.
+                    <strong>2. Semantic Embeddings:</strong> Each unique response is embedded into a 3,072‑dimensional vector (OpenAI
+                    <code>text-embedding-3-large</code>) capturing contextual meaning.
                 </p>
                 <p>
-                    <strong>Optimal Clustering:</strong>
-                    K-Means clustering with silhouette score optimization automatically determined the most meaningful thematic groupings.
+                    <strong>3. Dimensionality Reduction:</strong> 3D t‑SNE (adaptive perplexity) projects embeddings while preserving local semantic neighborhoods for visual exploration.
                 </p>
                 <p>
-                    <strong>Frequency Visualization:</strong>
-                    Point sizes represent response frequency (cube root scaling for volume), positioned at cluster centroids with hover details.
+                    <strong>4. Automatic Clustering:</strong> K‑Means is run over the 3D projection for k ∈ [2,30]; the k with highest silhouette score is selected to represent emergent themes (no manual tuning).
                 </p>
                 <p>
-                    <strong>Interactive Exploration:</strong>
-                    Each 3D visualization supports rotation, zooming, and hover inspection of original response text and cluster information.
+                    <strong>5. Frequency & Sizing:</strong> Identical responses are aggregated; marker size scales by cube‑root(frequency) so common sentiments stand out without overwhelming rare but distinct ideas.
+                </p>
+                <p>
+                    <strong>6. Color Mapping:</strong> A reproducible discrete palette assigns stable colors per cluster; the color legend is carried into both visualization and dialogue UI.
+                </p>
+                <p>
+                    <strong>7. Cluster “Vibe” Extraction:</strong> For each cluster a one‑sentence tonal/style descriptor is LLM‑generated once and cached (e.g., “pragmatic, solutions‑focused empathy”).
+                </p>
+                <p>
+                    <strong>8. Dialogue Transcript Generation:</strong> An LLM simulates a turn‑based exchange where each cluster speaks in its persona, referencing representative response content. A final
+                    <em>Synthesis</em> line summarizes convergence and tension points.
+                </p>
+                <p>
+                    <strong>9. Text‑to‑Speech (Per Line):</strong> Each dialogue line is rendered to audio via distinct vetted voices (e.g., alloy, echo, fable, onyx…) with the vibe passed as system instructions (not spoken aloud).
+                </p>
+                <p>
+                    <strong>10. Playback Assembly:</strong> A manifest (
+                    <code>audio_manifest.json</code>) indexes lines, voices, cluster labels, and paths. The front‑end module streams sequential audio, highlights the active line, supports keyboard control, speed adjustment, preloading, and auto‑scroll.
+                </p>
+                <p>
+                    <strong>11. Interactive Exploration:</strong> Users rotate / zoom 3D semantic maps, inspect original wording via hover, then scroll to the roundtable to “hear” thematic perspectives converse—linking quantitative structure with qualitative nuance.
+                </p>
+                <p style="opacity:.85;">
+                    <strong>Reproducibility & Efficiency:</strong> Cluster vibes and transcripts are cached to avoid repeated LLM cost; visualization export + dialogue assets share a consolidated
+                    <code>clustered_responses.json</code> for downstream reuse.
                 </p>
             </div>
         </div>
+        <script>
+        (function(){
+            function format(num){ return num.toLocaleString(); }
+            fetch('clustered_responses.json')
+              .then(r=> r.ok ? r.json() : Promise.reject(r.status))
+              .then(data => {
+                  document.querySelectorAll('.card-stats[data-question]').forEach(el => {
+                      const key = el.getAttribute('data-question');
+                      const entry = data[key];
+                      if(!entry){ el.textContent = 'No data'; return; }
+                      const uniqueCount = (entry.responses || []).length;
+                      const totalCount = (entry.responses || []).reduce((s,r)=> s + (r.frequency||1), 0);
+                      const clusterCount = Object.keys(entry.clusters || {}).length;
+                      el.textContent = format(totalCount) + ' responses (' + uniqueCount + ' unique) • ' + clusterCount + ' clusters';
+                  });
+              })
+              .catch(()=>{
+                  document.querySelectorAll('.card-stats').forEach(el => { el.textContent = 'Counts unavailable'; });
+              });
+        })();
+        </script>
     </body>
 </html>

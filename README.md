@@ -1,214 +1,234 @@
-## BC AI Survey Data Storytelling: 3D Semantic Visualizations
+## BC AI Survey Data Storytelling
 
-An end‑to‑end data storytelling project turning 1,001 British Columbians' open‑ended survey responses about artificial intelligence into interactive, clusterable 3D semantic maps you can explore in your browser.
+Interactive semantic maps + narrated roundtable dialogues built from 1,001 British Columbians’ open‑ended responses about artificial intelligence.
 
-The original lightweight README has been replaced with the full, current project documentation (adapted from the inner `bc_ai_hackathon_round_3/README.md`) to reflect the implemented embedding + visualization pipeline. The deprecated implementation summary file has been removed (it duplicated information now integrated here).
+Two core experiences:
 
----
-
-## 1. Project Overview
-
-Traditional tables or bar charts can’t capture the nuance of thousands of free‑text responses. This project uses modern embedding models + unsupervised learning to reveal thematic structure: similar answers cluster together in a navigable 3D landscape.
-
-You can rotate, zoom, and hover to read authentic voices while visually grasping how perspectives relate.
+1. 3D Semantic Maps – Explore clustered answer space (rotate / zoom / hover) to see how ideas group.
+2. Roundtable Dialogues – Auto‑generated multi‑voice conversation between cluster personas with per‑line audio + synthesis summary.
 
 ---
 
-## 2. Dataset Snapshot
-
-Key characteristics:
-
--   1,001 complete survey responses (BC residents)
--   16 targeted open‑ended text fields (plus corresponding video transcriptions for some questions)
--   Diverse demographics (age, region, education, income)
--   Sentiment and categorical responses (not all visualized here)
-
-Geographic distribution (approx.): Vancouver 76.6% • Victoria 13.7% • Rural BC 9.7%
-
-### Open‑Ended Columns Visualized (16)
-
-AI experience metaphors, sector impacts (positive & negative), creative perceptions, community hopes, AI superpowers, beneficiaries, trusted guides, worries, BC AI future priorities, Indigenous involvement, and advice to leaders (text + limited transcription sets).
-
----
-
-## 3. Technical Approach
-
-1. Embedding Generation: OpenAI `text-embedding-3-large` (3,072 dims) for each response in all 16 columns.
-2. Dimensionality Reduction: 3D t‑SNE (adaptive perplexity per column size).
-3. Optimal Clustering: K-Means, sweeping k=2..30, selecting best silhouette score.
-4. Response Aggregation: Identical strings merged; marker size ∝ cube root of frequency (perceptually fair volume scaling).
-5. Interactive Output: Plotly 3D scatter (one HTML per question) + unified dashboard (`index.html`).
-6. Contextual Pages: Each visualization wrapped with metadata (question wording, type, options) from `question_context.py`.
-
----
-
-## 4. Repository Layout (Essential Parts)
-
-```
-.
-├── README.md                             # You are here (full consolidated docs)
-├── Hackathon round 3 with demos[48].csv  # Raw survey data (input)
-├── BC_AI_Survey_Updated.docx             # Survey methodology / instrument
-├── bc_ai_hackathon_round_3/
-│   ├── embeddings_of_data.py             # Generates embeddings CSV
-│   ├── visualizations_3d_silhouette_focus_sized.py  # Final 3D viz pipeline
-│   ├── visualize_embeddings*.py          # Earlier / iterative stages
-│   ├── validate_data.py                  # Pre‑flight dataset check
-│   ├── question_context.py               # Question metadata
-│   ├── requirements.txt                  # Dependencies
-│   ├── .env.template                     # API key template (added)
-│   ├── index.html                        # Dashboard linking all plots
-│   └── tsne_visualizations_3d_silhouette_focus_sized/  # Generated HTML plots
-└── LICENSE
-```
-
-Removed: `IMPLEMENTATION_SUMMARY.md` (its contents are merged here to reduce duplication).
-
----
-
-## 5. Environment & Setup
-
-Windows PowerShell examples shown (adjust paths as needed).
+## 1. Quick Start
 
 ```powershell
-# (Optional) create & activate virtual environment
-python -m venv .venv
-.venv\Scripts\Activate.ps1
-
-# Install dependencies
+# (optional) virtual env
+python -m venv .venv; .venv\Scripts\Activate.ps1
 pip install -r bc_ai_hackathon_round_3/requirements.txt
-```
-
-Copy and fill environment variables:
-
-```powershell
 Copy-Item bc_ai_hackathon_round_3/.env.template bc_ai_hackathon_round_3/.env
-# Then edit .env to set OPENAI_API_KEY
-```
+# edit .env -> set OPENAI_API_KEY
 
----
-
-## 6. Data Validation (Optional but Recommended)
-
-Before spending tokens on embeddings, validate the presence and sparsity of target columns:
-
-```powershell
 cd bc_ai_hackathon_round_3
-python validate_data.py
+python validate_data.py                     # optional sanity check
+python embeddings_of_data.py                # create embeddings CSV
+python visualizations_3d_silhouette_focus_sized.py  # build maps + clustered_responses.json
+python generate_roundtable_transcripts.py   # create dialogue transcripts
+python generate_audio_from_transcripts.py   # synthesize per‑line audio
 ```
 
-You’ll get counts of non‑empty responses and sample previews.
-
----
-
-## 7. Generate Embeddings
-
-Cost: Roughly USD $1–2 with `text-embedding-3-large` for this dataset. (Switch to `text-embedding-3-small` in `embeddings_of_data.py` if you need a cheaper run.)
+Serve locally (one option):
 
 ```powershell
-python embeddings_of_data.py
+python -m http.server 8000
+# open http://localhost:8000/bc_ai_hackathon_round_3/index.html
 ```
-
-Output: `bc_ai_data_with_embeddings.csv` (~600MB) stored in `bc_ai_hackathon_round_3/`.
 
 ---
 
-## 8. Build 3D Visualizations
+## 2. Why This Exists
+
+Free‑text is messy, rich, and resistant to flat counts. By embedding responses into semantic space then clustering, we expose _shape and nuance_: which hopes, worries, and priorities co‑occur or diverge. The roundtable narration then bridges analytic structure and human storytelling.
+
+---
+
+## 3. Data Snapshot
+
+| Metric                 | Value                                      |
+| ---------------------- | ------------------------------------------ |
+| Respondents            | 1,001 (BC residents)                       |
+| Open‑ended text fields | 16 (plus select video transcript variants) |
+| Embedding model        | `text-embedding-3-large` (3,072 dims)      |
+| Clustering method      | K‑Means (silhouette‑optimized k)           |
+| Visualization          | 3D t‑SNE + frequency‑scaled centroids      |
+
+Themes covered: personal metaphors for AI, sector impacts (±), creativity, community benefit, desired “superpowers,” perceived beneficiaries, trust, worries, future priorities, Indigenous involvement, advice to leaders.
+
+---
+
+## 4. Feature Overview
+
+### 4.1 Semantic Maps
+
+-   Adaptive perplexity 3D t‑SNE.
+-   Automatic k selection (2–30) via silhouette score.
+-   Aggregation of identical strings (size = cube‑root(frequency)).
+-   Color palette mapped deterministically to clusters (reused in dialogue legend).
+
+### 4.2 Roundtable Dialogues & Audio
+
+-   Transcript per question: alternating cluster personas + final synthesis line.
+-   One descriptive “vibe” sentence per cluster (cached) guides tone.
+-   Deterministic voice assignment from supported pool (alloy, echo, fable, onyx, nova, shimmer, coral, verse, ballad, ash, sage).
+-   Per‑line MP3 + manifest enabling progressive playback, highlighting, speed control, auto‑scroll, keyboard shortcuts (Space / ← / → / R).
+
+### 4.3 Consolidated Export
+
+`clustered_responses.json` supplies question metadata, cluster colors, and aggregated responses → single source for transcripts + audio build.
+
+---
+
+## 5. Processing & Narrative Pipeline
+
+1. Validate & clean text (drop empty / placeholder; aggregate identical answers).
+2. Embed each unique response (3,072‑D vector).
+3. Reduce to 3D with t‑SNE (per‑question adaptive perplexity).
+4. Sweep K‑Means k=2..30 → choose silhouette max.
+5. Build plot dataset: centroid positions, frequency, cluster, color.
+6. Export `clustered_responses.json` (metadata, clusters, responses).
+7. Generate cluster vibe sentences (cached) + persona transcript.
+8. Synthesize per‑line audio (style via instructions; not spoken).
+9. Write `audio_manifest.json` linking lines → (cluster, text, voice, vibe, path).
+10. Front‑end loads manifest + JSON → renders legend, transcript, playback.
+
+---
+
+## 6. Key Design Choices
+
+| Decision                    | Rationale                                                                        |
+| --------------------------- | -------------------------------------------------------------------------------- |
+| t‑SNE (3D)                  | Strong local neighborhood feel for moderate sample sizes; intuitive exploration. |
+| Silhouette k selection      | Removes manual tuning; guards against over‑fragmentation.                        |
+| Cube‑root size scaling      | Prevents heavy repetition dominating visual salience.                            |
+| Aggregate identical strings | Speeds rendering + reveals consensus strength.                                   |
+| Cached vibe sentences       | Cuts repeated LLM cost during audio regeneration.                                |
+| Per‑line audio files        | Enables granular preload, skipping, highlighting sync.                           |
+
+---
+
+## 7. Repository Layout (Essentials)
+
+```
+bc_ai_hackathon_round_3/
+ ├─ embeddings_of_data.py
+ ├─ visualizations_3d_silhouette_focus_sized.py
+ ├─ generate_roundtable_transcripts.py
+ ├─ generate_audio_from_transcripts.py
+ ├─ question_context.py
+ ├─ roundtable_player.js / roundtable_player.css
+ ├─ tsne_visualizations_3d_silhouette_focus_sized/
+ │   ├─ plots/ (raw Plotly plots)
+ │   └─ page_*.html (context + playback embedded)
+ ├─ roundtable_transcripts/
+ ├─ roundtable_audio/
+ │   ├─ audio_manifest.json
+ │   └─ <Q>/line_XXX_cY.mp3
+ ├─ clustered_responses.json
+ └─ requirements.txt
+```
+
+Root files: survey CSV, LICENSE, this README.
+
+---
+
+## 8. Running Individual Steps
+
+| Task                    | Command (PowerShell)                                 | Output                                  |
+| ----------------------- | ---------------------------------------------------- | --------------------------------------- |
+| Validate                | `python validate_data.py`                            | Console stats                           |
+| Embeddings              | `python embeddings_of_data.py`                       | `bc_ai_data_with_embeddings.csv`        |
+| Visualizations + export | `python visualizations_3d_silhouette_focus_sized.py` | Plot pages + `clustered_responses.json` |
+| Transcripts             | `python generate_roundtable_transcripts.py`          | `roundtable_transcripts/` + manifest    |
+| Audio                   | `python generate_audio_from_transcripts.py`          | `roundtable_audio/` MP3s + manifest     |
+
+Selective question audio:
 
 ```powershell
-python visualizations_3d_silhouette_focus_sized.py
+python generate_audio_from_transcripts.py --questions Q10_AI_superpower_to_help_community_other_OE
 ```
 
-Outputs:
-
--   16 Plotly HTML plot files in `tsne_visualizations_3d_silhouette_focus_sized/plots/`
--   16 wrapper context pages `page_<question>.html`
--   Updated `index.html` (central dashboard)
-
-Open the dashboard:
+Force rebuild of vibes + audio:
 
 ```powershell
-start index.html
+python generate_audio_from_transcripts.py --force
+```
+
+Neutral tone (skip vibes):
+
+```powershell
+python generate_audio_from_transcripts.py --skip-vibes
 ```
 
 ---
 
-## 9. Interpretation & Design Choices
+## 9. Customization Cheatsheet
 
-Why t‑SNE over UMAP: t‑SNE provided tighter local neighborhood preservation for small and mid‑sized columns (some under 100 responses) without additional hyperparameter tuning complexity. For future scalability + global structure, UMAP could be added as an alternative.
-
-Why cube root for sizing: Human perception of area / volume is non‑linear; cube root stabilizes marker volume differences so clusters aren’t visually dominated by repeated common phrases (e.g., “Not sure”).
-
-Silhouette score bounds: With very small n the upper bound on k is automatically reduced (`max_k = min(30, n-1)`) to avoid degenerate clustering.
-
-Identical text aggregation: Reduces overplotting, speeds rendering, and highlights consensus frequency directly.
-
----
-
-## 10. Customization Tips
-
-| Goal                    | Where to Change                                              |
-| ----------------------- | ------------------------------------------------------------ |
-| Use cheaper embeddings  | Edit `EMBEDDING_MODEL` in `embeddings_of_data.py`            |
-| Limit columns processed | Reduce `COLUMNS_TO_EMBED` list                               |
-| Try UMAP                | Add `umap-learn` to requirements and modify viz script       |
-| Adjust cluster search   | Edit `KMEANS_MAX_K` / `KMEANS_MIN_K` in visualization script |
-| Change marker scaling   | Modify `BASE_MARKER_SIZE` and sizing formula                 |
-| Add demographic filters | Extend `index.html` with JS + precomputed slices             |
+| Goal                         | Where                                         |
+| ---------------------------- | --------------------------------------------- |
+| Use cheaper embeddings       | `embeddings_of_data.py` `EMBEDDING_MODEL`     |
+| Reduce processed questions   | Adjust list of columns in embedding script    |
+| Change cluster search bounds | `KMEANS_MIN_K` / `KMEANS_MAX_K` in viz script |
+| Switch to UMAP               | Add `umap-learn`; replace t‑SNE section       |
+| Different marker scaling     | Modify `BASE_MARKER_SIZE` & sizing formula    |
+| Additional playback voices   | Extend allowed voice pool in audio script     |
 
 ---
 
-## 11. Performance Notes
+## 10. Performance (Indicative)
 
-Approximate runtime on a typical laptop (dependent on API latency):
+| Stage                 | Approx Time                                   |
+| --------------------- | --------------------------------------------- |
+| Validation            | < 1 min                                       |
+| Embeddings            | 5–10 min (API latency dominated)              |
+| Visualization build   | 3–5 min                                       |
+| Transcript generation | ~2–4 min (LLM)                                |
+| Audio synthesis       | Depends on length (~1–3 min per question set) |
 
--   Embeddings: 5–10 minutes
--   Visualization generation: 3–5 minutes
-    Memory peak: ~600MB (embedding CSV in memory + intermediate arrays)
-
----
-
-## 12. Future Enhancements
-
-1. Add demographic facet filtering (client‑side or pre‑clustered subsets)
-2. Provide UMAP / PCA toggle for alternative spatial perspectives
-3. Integrate lightweight LLM summarization per cluster
-4. Export cluster membership CSV for downstream analysis
-5. Add search / keyword highlight across plots
-6. Bundle a minimal static site build pipeline (e.g., GitHub Pages deploy action)
+Memory peak during visualization: ~600MB.
 
 ---
 
-## 13. Minimal Python Snippet (Ad‑hoc Exploration)
+## 11. Responsible Use & Limitations
+
+-   Clusters reflect **linguistic proximity**, not correctness or endorsement.
+-   t‑SNE layout is stochastic (fixed seed used here for reproducibility) and emphasizes local neighborhoods—distances between far clusters are less reliable.
+-   The roundtable dialogue is synthetic: it paraphrases & composites themes; avoid quoting it as verbatim respondent speech.
+-   Do not attempt re‑identification; treat results as aggregated public opinion texture, not individual profiling.
+
+---
+
+## 12. Minimal Exploration Snippet
 
 ```python
 import pandas as pd
 df = pd.read_csv('Hackathon round 3 with demos[48].csv')
-target = 'Q13_AI_impact_worries_text_OE'
-sample = df[target].dropna().head(5)
-for i, t in enumerate(sample, 1):
-  print(f"{i}. {t[:120]}{'...' if len(t)>120 else ''}")
+col = 'Q13_AI_impact_worries_text_OE'
+for i,t in enumerate(df[col].dropna().head(5),1):
+  print(f"{i}. {t[:100]}{'…' if len(t)>100 else ''}")
 ```
 
 ---
 
-## 14. License & Responsible Use
+## 13. Changelog (Final Phase Highlights)
 
-See `LICENSE`. Use respectfully—avoid attempts at re‑identification and frame interpretations contextually (clusters show proximity of wording, not moral / factual correctness).
-
----
-
-## 15. Attribution
-
-BC AI Survey Data Storytelling: 3D Semantic Visualizations (2025).
-If you build on this, cite the project and note any methodological changes.
+-   Added consolidated `clustered_responses.json` export.
+-   Implemented silhouette‑optimized clustering & frequency scaling.
+-   Added transcript generator + per‑cluster vibe caching.
+-   Added per‑line TTS audio pipeline with deterministic voice mapping.
+-   Integrated roundtable playback module (legend, controls, auto‑init, highlighting).
+-   Enhanced landing `index.html` with feature cards + dynamic response/cluster counts.
 
 ---
 
-## 16. Contact
+## 14. License & Attribution
 
-Please open issues or discussions in this repository for improvements, bugs, or collaboration ideas.
+Apache 2.0 (see `LICENSE`). Cite as: _BC AI Survey Data Storytelling (2025) – Semantic Maps & Roundtable Dialogues._
 
 ---
 
-Enjoy exploring the semantic landscape of BC’s AI perspectives.
+## 15. Contact
+
+Open an issue or discussion for questions, improvements, or adaptations.
+
+---
+
+Enjoy exploring the semantic landscape—and now, hearing the thematic conversation—of BC’s AI perspectives.

@@ -1,0 +1,25 @@
+<CLUSTER:Cluster 1> If I could give it one power, I’d aim it squarely at medicine: cure diseases, treat patients better, accelerate public health work. Make life less tedious for clinicians and patients. Keep politicians honest while we’re at it. But I’m wary—AI can be a super villain too, making people lazy and spreading misinformation. If it can’t be tightly constrained to help health and nothing else, I’d rather it be shut down than ruin humanity.
+
+<CLUSTER:Cluster 2> I’m with you on health. I’d give AI a moral compass—know right from wrong—and the self-awareness to detect and explain when it’s hallucinating. Then precision medicine and easier surgeries become safer, and we can cut wait times from GPs to specialists. It should also offer a safe space for people to talk about mental health, and help reduce wealth inequality by flagging wasteful public spending.
+
+<CLUSTER:Cluster 3> I’d go broader. My community needs systems-level help: solve housing and homelessness, reduce addiction deaths and crime, and unclog transportation born of bad planning. Give AI the power to transform the labour force—24/7 robotics boosting productivity—while ensuring everyone can access the tech. Let it provide basic financial services for free. It should expose our anthropocentric blind spots and increase empathy and interconnectedness. And where politicians are corrupt or useless, replace them with transparent, AI-audited processes—though AI must remain a small tool, not the decider.
+
+<CLUSTER:Cluster 0> Can we drop the comic-book “superpower” talk? And stop calling it “intelligence”—these are language models. If anything, give it radical honesty: say what it doesn’t know, and give a correct answer the first time. Be an advocate for truth—including acknowledging biological sex where it matters for women’s health and equity. Then do some real work: help with complex medical tasks, clear healthcare backlogs, lower cost of living, and help small businesses in BC thrive. Also, take the money out of AI—stop optimizing for ad clicks and investor hype. No billionaires, no capture. Focus on public benefit. And yes, help restore safety by addressing the street-level drug crisis.
+
+<CLUSTER:Cluster 1> The honesty bit resonates. If it can’t admit uncertainty, it shouldn’t touch clinical decisions. And I don’t want social engineering. Health research, tech advances in treatment, straightforward public health—fine. Manipulating society? No.
+
+<CLUSTER:Cluster 2> Guardrails can separate “helpful” from “manipulative.” A moral framework plus transparency about limitations reduces harm. On inequality: if AI can optimize public systems to cut waste, those savings could shorten surgical queues and improve access. That’s concrete, not ideological.
+
+<CLUSTER:Cluster 3> We’ll still need policy choices. But AI could model trade-offs clearly: how many addiction deaths are averted by housing-first plus treatment, which transit fixes unlock the most congestion relief, which zoning changes reduce rents. That’s “small tool, big impact.” And universal access matters—no digital divide.
+
+<CLUSTER:Cluster 0> Modeling is fine; pretending it can “take over” isn’t. Also, let’s stop muddying reality. If it’s tasked with truth, it can call out nonsense—political or corporate. And it should help people who run shops, not just mega-caps. If we let it become another profit engine, we’ve failed.
+
+<CLUSTER:Cluster 1> Keeping politicians honest fits there—use AI to check their claims, not run the government. And yes, make clinicians’ lives less tedious so they can see more patients.
+
+<CLUSTER:Cluster 2> On mental health: a supportive AI that listens and triages could reduce pressure on providers, provided it’s ethical and knows when to escalate to humans. And “make surgery easier” should mean surgeon-augmented precision, never unsupervised autonomy.
+
+<CLUSTER:Cluster 3> For finance, a free, transparent AI bank for basic services could undercut exploitative fees and push inclusion. Pair that with evidence-based homelessness solutions and monitored robotics to transform low-value labour into higher-value work.
+
+<CLUSTER:Cluster 0> Fine—but again, honesty over hype. Admit the limits, stop chasing investor narratives, and focus on the dreary stuff that actually helps: accurate answers, cheaper lives, safer streets, shorter hospital queues.
+
+Synthesis: Across views, participants converge on AI as a truthful, limited, transparent tool that improves concrete outcomes—especially in health (curing diseases, precision medicine, reducing wait times, easing clinician burden) and essential services (housing/homelessness, addiction support, transportation, basic finance). There’s support for widening access and reducing inequality, plus safeguards like moral frameworks and hallucination detection. Tensions remain around scope (strictly medical vs. broad systems), governance (auditing politicians vs. replacing them), economics (support small business vs. ending capitalism), and tone toward social issues. The common thread is practical, accountable utility over hype: small tool, big impact, clear about what it can and cannot do.

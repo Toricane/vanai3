@@ -1,0 +1,41 @@
+<CLUSTER:Cluster 0> To me, all communities should be involved in shaping AI, but in BC, Indigenous communities especially. They should be treated as consultation partners, not an afterthought. And honestly, we need to actually listen to Indigenous people.
+
+<CLUSTER:Cluster 1> I’m not sure. I don’t know. Kind of no idea how that would work.
+
+<CLUSTER:Cluster 0> Fair. A lot of folks think AI is some magic solution—like, “AI = No Taxes & Free Fenty”—flashy promises that miss the point. But AI can be practical: a tool to teach about Indigenous history, culture, and languages, and to help communities with their own data analysis projects.
+
+<CLUSTER:Cluster 1> Still unsure. I don’t know. Maybe they shouldn’t be involved? Or… however they want to be.
+
+<CLUSTER:Cluster 0> If they want to be, yeah. The key is advancing self-reliance. AI could help track linguistic differences between languages—useful for revitalization—and improve access to information and education. But for any of that to work, AI systems need to be better educated about Indigenous information so they’re accurate, not repeating errors.
+
+<CLUSTER:Cluster 1> I have no idea how to make that happen. Not sure. I don’t know.
+
+<CLUSTER:Cluster 0> Part of it is recognizing that I’m not fully sure of the exact mechanisms either. I just think involvement should be heavy. Indigenous communities should help set priorities, tell us what matters, and we follow their lead. That’s what “consultation partner” means to me.
+
+<CLUSTER:Cluster 1> Unsure. I don’t know the Indigenous-and-AI connection. Like, what’s the direct link?
+
+<CLUSTER:Cluster 0> Think about it this way: if a community is doing a data project—tracking trends, evaluating programs—AI could help analyze and visualize. Or if a school wants to teach local history and language, AI could support that with community guidance. But without Indigenous input, AI might misrepresent facts. So involvement is about steering the content and correcting the errors.
+
+<CLUSTER:Cluster 1> Maybe. Still, I don’t know. No idea. Unsure.
+
+<CLUSTER:Cluster 0> And it’s not just Indigenous communities—everyone should be involved. But given BC’s context, they should be involved more than most. Even if the “how” isn’t perfectly defined yet, the direction is clear: listen, partner, and build tools that reflect their knowledge accurately.
+
+<CLUSTER:Cluster 1> I don’t know. They can be involved however they want to be. Or maybe not involved—again, I’m not sure.
+
+<CLUSTER:Cluster 0> Choice matters, absolutely. Some communities might opt out. Others might focus on language tools; others on data capacity. What we shouldn’t do is assume AI will fix things by itself. It needs community direction.
+
+<CLUSTER:Cluster 1> Not sure. I don’t know. No idea.
+
+<CLUSTER:Cluster 0> One practical step is improving access to information and education so communities can decide for themselves. If people understand what AI can and can’t do, it becomes less “magic” and more “useful.”
+
+<CLUSTER:Cluster 1> I don’t know. Unsure.
+
+<CLUSTER:Cluster 0> And accountability: if AI platforms are going to include Indigenous topics, they must be held to accuracy. That means better sources and corrections guided by the people represented.
+
+<CLUSTER:Cluster 1> I don’t know. They shouldn’t? Or… maybe they should if they want to. I’m really unsure.
+
+<CLUSTER:Cluster 0> That uncertainty is common. Even I’m unsure about specifics sometimes. But I’m confident in the principles: heavy involvement where desired, respect, accurate representation, and tools that build self-reliance rather than dependency.
+
+<CLUSTER:Cluster 1> Not sure. No idea. I don’t know.
+
+Synthesis: The discussion surfaced two clear stances. Cluster 0 emphasized strong, choice-based Indigenous involvement—treating communities as consultation partners, prioritizing listening, and using AI for practical benefits like teaching history, culture, and languages, supporting community data projects, tracking linguistic differences, improving access to information and education, and ensuring AI is more accurate about Indigenous topics to advance self-reliance. Cluster 1 expressed persistent uncertainty, alternating between “not sure,” “no idea,” deference to “however they want to be,” and occasional skepticism that they should be involved at all. Together, the themes suggest broad support for meaningful, optional, and accurate involvement led by Indigenous communities, tempered by a general public uncertainty about the specifics of how to do it.

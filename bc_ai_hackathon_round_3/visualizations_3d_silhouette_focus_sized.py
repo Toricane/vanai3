@@ -1,4 +1,5 @@
 import ast
+import json
 import os
 import textwrap
 
@@ -15,6 +16,9 @@ INPUT_CSV_PATH = "bc_ai_data_with_embeddings.csv"
 ORIGINAL_TEXT_COLUMNS = list(question_context_data.keys())
 OUTPUT_HTML_DIR = "tsne_visualizations_3d_silhouette_focus_sized"
 MAIN_INDEX_PATH = "index.html"
+RESPONSES_JSON_PATH = (
+    "clustered_responses.json"  # consolidated per-question cluster/response export
+)
 
 TSNE_PERPLEXITY = 30
 TSNE_MAX_ITER = 1000
@@ -139,14 +143,26 @@ def create_main_html_with_iframe(context, plot_filename_only):
         .back-link:hover {{
             background: rgba(255, 255, 255, 0.4);
         }}
+        /* Roundtable intro minimal (full styles in external CSS) */
+        #roundtable-intro {{ margin-top:18px; }}
     </style>
 </head>
 <body>
     <div class="container">
         <a href="../{MAIN_INDEX_PATH}" class="back-link">← Back to Main Dashboard</a>
         {context_html}
-        <iframe src="plots/{plot_filename_only}"></iframe>
+    <iframe src="plots/{plot_filename_only}"></iframe>
+    <section id="roundtable-module" aria-label="Roundtable audio player"></section>
     </div>
+    <link rel="stylesheet" href="../roundtable_player.css" />
+    <script src="../roundtable_player.js"></script>
+        <script>
+                const QUESTION_KEY = "{context.get("column_name", "")}";
+                // Directly initialize when script loads (player script added earlier in document body end)
+                window.addEventListener('DOMContentLoaded', () => {{
+                    if(window.initRoundtableForQuestion){{ window.initRoundtableForQuestion(QUESTION_KEY); }}
+                }});
+        </script>
 </body>
 </html>
 """
@@ -178,6 +194,9 @@ def main():
     os.makedirs(output_plot_dir, exist_ok=True)
     print(f"HTML visualizations will be saved in: '{OUTPUT_HTML_DIR}/'")
     print(f"Plot files will be saved in: '{output_plot_dir}/'")
+
+    # Collect all per-question response + clustering metadata here
+    aggregated_export = {}
 
     try:
         df_full = pd.read_csv(INPUT_CSV_PATH)
@@ -308,6 +327,10 @@ def main():
 
         print("  Creating 3D visualization (discrete colors)...")
         palette = build_discrete_palette(best_k)
+
+        # Explicit color map (cluster index -> color) for reproducibility outside Plotly
+        color_map = {f"Cluster {i}": palette[i] for i in range(best_k)}
+        text_groups["color"] = text_groups["cluster_label"].map(color_map)
         fig = px.scatter_3d(
             text_groups,
             x="x",
@@ -343,13 +366,47 @@ def main():
 
         main_html_filename = f"page_{original_col_name}.html"
         main_html_filepath = os.path.join(OUTPUT_HTML_DIR, main_html_filename)
-        main_html_content = create_main_html_with_iframe(context, plot_filename_only)
+        # Add column name so template can initialize correct question key on page
+        context_with_key = dict(context)
+        context_with_key["column_name"] = original_col_name
+        main_html_content = create_main_html_with_iframe(
+            context_with_key, plot_filename_only
+        )
 
         with open(main_html_filepath, "w", encoding="utf-8") as f:
             f.write(main_html_content)
         print(f"  Saved context page to: {main_html_filepath}")
 
-    print("\n--- All visualizations generated successfully! ---")
+        # Append export data for this question
+        export_rows = []
+        for _, r in text_groups.iterrows():
+            export_rows.append(
+                {
+                    "text": r["text"],
+                    "cluster_index": int(r["cluster"]),
+                    "cluster_label": r["cluster_label"],
+                    "frequency": int(r["frequency"]),
+                    "color": r["color"],
+                }
+            )
+        aggregated_export[original_col_name] = {
+            "question_title": context.get("title"),
+            "question_main": context.get("main_question"),
+            "question_type": context.get("type"),
+            "follow_up": context.get("follow_up"),
+            "clusters": {lbl: color_map[lbl] for lbl in color_map},
+            "responses": export_rows,
+        }
+
+    # Write consolidated JSON export (after all questions processed)
+    try:
+        with open(RESPONSES_JSON_PATH, "w", encoding="utf-8") as jf:
+            json.dump(aggregated_export, jf, ensure_ascii=False, indent=2)
+        print(f"\n📁 Wrote consolidated response export: {RESPONSES_JSON_PATH}")
+    except Exception as e:
+        print(f"\n⚠️ Failed to write {RESPONSES_JSON_PATH}: {e}")
+
+    print("\n--- All visualizations & JSON export generated successfully! ---")
 
 
 if __name__ == "__main__":

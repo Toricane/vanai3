@@ -1,0 +1,33 @@
+<CLUSTER:Cluster 1> Top of mind? Energy and truth. AI guzzling power while spewing polished nonsense is not progress. I want factual truth accessible, not a swamp of fakes. Safety, too. Honestly, “unbiased AI” makes me laugh—everything’s manipulated by censorship and tribalism. Part of me says: don’t use it, ban it. Full stop. And meanwhile, BC has real crises like housing.
+
+<CLUSTER:Cluster 3> I may have clicked the wrong answer in the survey, but my priorities are clear: accuracy and governance. Government should be a gatekeeper to prevent harms—using existing laws for hate speech, extortion, harassment—without suppressing free speech. We need social justice and strong democracy at the center. Also, review AI without AI interference; humans in the loop. And yes, survival—keep it away from domains where stakes are existential. More bike lanes for AI—kidding, but we do need guardrails.
+
+<CLUSTER:Cluster 2> Always keep to the code, aye. Ending it would be best—this tech isn’t mandatory. It’s evil in the wrong hands. If it sticks around, it must be very secure so fiends can’t manipulate info for profit. We need clear regulation and criminal statutes for lying with AI—deep fakes, false identities. In healthcare especially, don’t let government interference make it worse, but don’t let bad actors run wild either.
+
+<CLUSTER:Cluster 0> Start with the basics: education on how AI trains—on stolen data, nearly universally. That’s not innovation; that’s extraction. Make our social systems impervious to AI’s negative effects and protect jobs. Limit its use—stores, driving—don’t pretend it’s infallible. Humans should remain in the loop because AI makes mistakes. And “let Google train it, USA algorithms—what could go wrong?” Read the room. BC can’t steer global AI; don’t waste time pretending we can, but do ban/regulate it here to hell. Unforeseen consequences will outweigh benefits.
+
+<CLUSTER:Cluster 1> Exactly—unintended consequences. And misinformation corrodes everything. If we can’t guarantee safety and truth, why are we deploying it? Some say “capitalize on it,” and sure, hopefully we get ahead of the curve—if it’s inevitable, at least extract real value for people here. But my default? The government should ban all AI. Not a timid moratorium—ban it.
+
+<CLUSTER:Cluster 3> I hear the ban impulse, but I’m wary of blunt instruments. If we already have laws for incitement, harassment, fraud—enforce them against AI-mediated abuse. For speech, avoid new censorship mechanisms that chill dissent. Design governance that’s transparent, reviewable, and anchored in democratic oversight. And accuracy isn’t optional; certify systems for high-stakes uses.
+
+<CLUSTER:Cluster 2> Aye, certify—and criminalize bad behavior. Deep fakes that ruin reputations, scams that extort—throw the book. But don’t let a bloated bureaucracy smother legitimate uses in healthcare where, if done right and secure, it can help. Still, if it can’t be kept honest, end it.
+
+<CLUSTER:Cluster 0> Certification is meaningless if the training data is ill-gotten. If your foundation is stolen, everything built on it is compromised. Job protection matters more than speculative gains. And limiting deployments in daily life—no creep into retail or streets—reduces harm surface.
+
+<CLUSTER:Cluster 1> On deployments: energy. If a single model eats enough power to light a town, that’s a policy issue. Tie any permission to strict energy and truth standards. And please, don’t sell us “unbiased” when the gatekeepers are as tribal as the rest of us.
+
+<CLUSTER:Cluster 3> On energy, add accountability—disclose consumption, incentivize efficiency. On truth, require provenance and clear labeling so people can distinguish AI outputs. “Reviewing AI without AI” also means independent audits, conducted by people, not black-box tools grading themselves.
+
+<CLUSTER:Cluster 2> Label it, lock it down, and make the penalties bite. If someone uses AI to impersonate or defraud, that’s a crime—treat it like one. Security first, last, and always. And don’t let anyone pretend adoption is inevitable—policy can say no.
+
+<CLUSTER:Cluster 0> Also: acknowledge limits of BC’s leverage. We can’t halt global R&D, but we can put up strong borders: ban categories, regulate to the maximum within jurisdiction, keep humans in control, and shield our institutions from automated manipulation.
+
+<CLUSTER:Cluster 1> And while we debate AI, remember: housing. If government bandwidth is finite, prioritize human necessities. If we do anything with AI, it should tangibly help people live better, not just optimize ads.
+
+<CLUSTER:Cluster 3> That’s where “social justice and strong democracy” land. Any benefits should be equitably distributed, and the public should have a voice in where AI is allowed—and where it must stay away.
+
+<CLUSTER:Cluster 2> If it stays, it stays on a short leash. If not, scuttle the ship. Keep to the code.
+
+<CLUSTER:Cluster 0> Or better: dry-dock it until we stop building on stolen content and can prove benefits exceed the risks we can’t yet foresee.
+
+Synthesis: Across the discussion, participants prioritized safety, truthfulness, and the containment or outright prohibition of AI. There was strong concern about misinformation, deepfakes, and exploitation, with calls for criminal penalties, human-led audits, and clear labeling. Governance views split between bans and targeted enforcement using existing laws, with caution against suppressing free speech. Practical limits were urged: keep humans in the loop, restrict high-risk deployments (e.g., retail, driving, healthcare unless secure), and recognize BC’s limited global influence while setting strict local guardrails. Energy use, job protection, data provenance (including objections to training on “stolen” data), and focusing on basic needs like housing rounded out the priorities. Even those open to potential benefits stressed that any adoption should be narrow, transparent, equitable, and demonstrably safe.

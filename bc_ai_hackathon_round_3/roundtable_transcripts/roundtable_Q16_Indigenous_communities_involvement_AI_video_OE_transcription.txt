@@ -1,0 +1,29 @@
+<CLUSTER:Cluster 0> When we talk about AI in BC, Indigenous people should always be at the table—especially when it comes to regulating and deciding how we go about our future. I’m not going to pretend I’ve got all the details figured out, but that principle feels non-negotiable.
+
+<CLUSTER:Cluster 1> I’m with you on that—heavily involved is the phrase I keep coming back to. I work in Indigenous relations and consult with communities, and I see firsthand how decisions get made without them, or too late. That can’t happen with AI.
+
+<CLUSTER:Cluster 0> Exactly. And it’s not just seats at meetings. The knowledge that AI learns from—what it “gleans”—should include traditional knowledge. A lot of that has been passed on orally. I’m not totally sure how that translates into AI systems, but it matters that it’s considered, not sidelined.
+
+<CLUSTER:Cluster 1> Right, and involvement needs to reflect real circumstances. Many communities are in remote areas; some don’t even have access to the internet. So when we say “heavily involved,” we have to remember the starting point isn’t the same everywhere. Processes, timelines, even the medium of engagement should respect that.
+
+<CLUSTER:Cluster 0> Yes—being at the table includes being there early, not after choices are locked in. On the knowledge side, if AI is going to reflect BC, it should make space for Indigenous ways of knowing. Oral histories, teachings—again, I’m not sure of the technical path, but I’m sure it shouldn’t be ignored.
+
+<CLUSTER:Cluster 1> There’s also a practical side that often gets missed: economic participation. Communities could potentially make money by hosting things—projects or systems connected to AI. I’ve seen interest in that. It turns involvement from a checkbox into a tangible opportunity.
+
+<CLUSTER:Cluster 0> That resonates. Participation shouldn’t just be consultative; it should shape regulation and also share benefits. If infrastructure or initiatives go forward, communities should be deciding alongside everyone else—and, where it makes sense, hosting or partnering so they see returns.
+
+<CLUSTER:Cluster 1> Exactly. And because of the connectivity gaps, the approach has to be flexible. “Heavily involved” means the model of engagement fits the community context, not the other way around. If a community doesn’t have reliable internet, you can’t assume digital-only participation in AI planning.
+
+<CLUSTER:Cluster 0> And involvement in regulation matters because AI isn’t just tech—it affects culture, education, and how knowledge is treated. If traditional knowledge is part of the learning pool—and I think it should be—we have to respect how it’s been passed down. I admit I don’t have a blueprint, but the direction is clear to me.
+
+<CLUSTER:Cluster 1> The recurring point we’re both making—“at the table,” “heavily involved”—is deliberate. It means early and ongoing roles in decision-making, and practical channels for communities to benefit, like hosting. It also means recognizing that some communities will be ready for certain opportunities sooner than others.
+
+<CLUSTER:Cluster 0> And keeping the focus on Indigenous voices leading how their knowledge and futures show up in AI, not just being consulted after the fact. Even if we don’t have all the specifics, that stance should guide everything else.
+
+<CLUSTER:Cluster 1> From my work, that stance also builds trust. When communities see real involvement—shaping rules, addressing connectivity realities, and exploring income from hosting—they’re more likely to engage meaningfully. It’s not just “Tell us what you think,” it’s “Let’s build this with you.”
+
+<CLUSTER:Cluster 0> Well put. For me, the two anchors are: always at the table for regulation and decisions, and honoring traditional, often oral, knowledge as part of what AI learns from—handled the right way. I’ll keep saying I’m not entirely sure how, but I’m sure it belongs.
+
+<CLUSTER:Cluster 1> And I’ll keep underscoring the practicalities: heavy involvement, adapted to remote realities and connectivity gaps, plus concrete opportunities—like hosting—that can bring benefits back to communities.
+
+Synthesis: Both participants call for Indigenous communities to be present early and consistently in AI decision-making and regulation in BC. They emphasize that traditional knowledge, often shared orally, should be considered within AI’s learning landscape. Practical realities—such as remote locations and limited internet access—must shape how involvement happens. Beyond consultation, there is support for tangible benefits, including potential income through hosting AI-related initiatives. While neither outlines technical specifics, they agree on the direction: sustained, meaningful participation that respects knowledge traditions and creates real opportunities.

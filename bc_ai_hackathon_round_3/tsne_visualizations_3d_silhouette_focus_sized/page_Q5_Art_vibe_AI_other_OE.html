@@ -50,6 +50,10 @@
         .back-link:hover {
             background: rgba(255, 255, 255, 0.4);
         }
+    /* Roundtable placeholder minimal (full styles in external CSS) */
+    #roundtable-launch { margin-top:18px; }
+    #roundtable-launch button { cursor:pointer; background:#ffffff22; color:#fff; border:1px solid #ffffff55; padding:10px 16px; border-radius:8px; font-weight:600; letter-spacing:.5px; }
+    #roundtable-launch button:hover { background:#ffffff33; }
     </style>
 </head>
 <body>
@@ -69,6 +73,23 @@
     </div>
     
         <iframe src="plots/plot_Q5_Art_vibe_AI_other_OE.html"></iframe>
+        <section id="roundtable-launch">
+            <h3>Roundtable Playback (Beta)</h3>
+            <p>Listen to a synthesized dialogue between clusters representing thematic groupings of responses.</p>
+            <button id="rt-init-btn">Load & Play Roundtable</button>
+        </section>
+        <section id="roundtable-module" class="hidden" aria-label="Roundtable audio player"></section>
     </div>
+    <link rel="stylesheet" href="../roundtable_player.css" />
+    <script src="../roundtable_player.js"></script>
+        <script>
+            const QUESTION_KEY = "Q5_Art_vibe_AI_other_OE";
+            document.getElementById('rt-init-btn').addEventListener('click', () => {
+                    const mod = document.getElementById('roundtable-module');
+                    mod.classList.remove('hidden');
+                    // Initialize player
+                    if(window.initRoundtableForQuestion){ window.initRoundtableForQuestion(QUESTION_KEY); }
+            });
+        </script>
 </body>
 </html>

@@ -1,0 +1,25 @@
+<CLUSTER:Cluster 1> If I had one piece of advice, it’s this: slow AI down—maybe don’t use it in places where it erodes the integrity of people, their jobs, and the broader economy. Pump the brakes before we let the tech run lives that people still have to live.
+
+<CLUSTER:Cluster 0> My advice is simple and firm: heavily regulate AI. Draw hard legal lines. It cannot be used to make—look, the point is it needs strong limits. And make it illegal to replace workers with AI. I’ll repeat that because it matters: make it illegal to replace workers with AI.
+
+<CLUSTER:Cluster 1> I hear you on the job protection. When I say slow it down, I mean exactly that—don’t let AI bulldoze livelihoods. If a rollout puts people’s dignity and the economy at risk, say no. Also, get ahead on education. Teach parents and teachers how to teach kids about AI. They will learn it anyway; better they learn to use it properly than pick up bad habits.
+
+<CLUSTER:Cluster 0> Education is good, but without laws it won’t matter. Companies will automate because they can. We need enforceable rules: heavy regulation and, yes, explicit bans on replacing workers. And it should also be illegal to have AI as—well, as a stand-in for a person in roles that belong to people.
+
+<CLUSTER:Cluster 1> We can pair that with a deliberate pace. If leaders slow adoption, they can actually build those protections in. Pilot carefully, involve workers, and if AI chips away at the fabric of jobs, pause. There’s no prize for being first if people pay the price.
+
+<CLUSTER:Cluster 0> Exactly why the law should be out in front. Don’t leave it to pilots and promises. Write it down: no replacement of workers. Heavy oversight. If AI enters a workplace, it should be strictly bounded so it doesn’t push people out.
+
+<CLUSTER:Cluster 1> And outside workplaces, schools and families need support to guide kids. Parents and teachers need tools to teach what AI is, what it isn’t, and how to use it responsibly. If they don’t get that guidance, kids will still learn—just not necessarily the right way.
+
+<CLUSTER:Cluster 0> I’m not against that. But I want leaders to treat this like safety law, not a tech trend. Set prohibitions first. The lines should be bright enough that no one can cross them and say, “We didn’t know.”
+
+<CLUSTER:Cluster 1> Fair—clear lines help everyone. I’d add that “not using it” should stay on the table. If the only way to deploy AI is to hollow out human roles or undermine the economy’s stability, then don’t deploy it. Protect people first.
+
+<CLUSTER:Cluster 0> That’s our common ground: people first. My emphasis is on the mechanism—heavy regulation and bans on worker replacement—so that “people first” isn’t just a slogan. I’ll say it succinctly: illegal to replace workers with AI, and strong controls on the rest.
+
+<CLUSTER:Cluster 1> And my emphasis is on pace and preparation—slow down, protect the integrity of jobs and communities, and prepare parents and teachers so the next generation learns to use AI properly, not haphazardly.
+
+<CLUSTER:Cluster 0> If leaders combine those—laws with teeth and a cautious rollout—we might actually make AI work for everyone, not just for a bottom line.
+
+Synthesis: Both perspectives prioritize people over technology. Cluster 0 calls for heavy regulation with explicit bans on replacing workers with AI, insisting on clear, enforceable legal boundaries. Cluster 1 urges a go-slow approach—even choosing not to use AI where it harms—focused on protecting the integrity of jobs and the economy, and on equipping parents and teachers to teach kids proper use. Together, they point toward a cautious, legally grounded path that centers human dignity and preparedness.
