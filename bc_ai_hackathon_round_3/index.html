@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BC AI Survey Data Storytelling - 3D Semantic Visualizations</title>
+        <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .subtitle {
+            text-align: center;
+            font-size: 1.2em;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+        .description {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .visualization-card {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 15px;
+            padding: 25px;
+            transition: transform 0.3s ease, background 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .visualization-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.25);
+        }
+        .card-title {
+            font-size: 1.1em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+        .card-description {
+            font-size: 0.9em;
+            margin-bottom: 15px;
+            opacity: 0.9;
+            line-height: 1.4;
+        }
+        .view-button {
+            display: inline-block;
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            color: white;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .view-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+        .methodology {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 25px;
+            border-radius: 15px;
+            margin-top: 40px;
+            border-left: 4px solid #ff6b6b;
+        }
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        .stat {
+            text-align: center;
+            margin: 10px;
+        }
+        .stat-number {
+            font-size: 2em;
+            font-weight: bold;
+            color: #ff6b6b;
+        }
+        .stat-label {
+            font-size: 0.9em;
+            opacity: 0.8;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>🎯 BC AI Survey: Semantic Visualizations</h1>
+            <p class="subtitle">Interactive 3D clustering of 1,001 British Columbian voices on artificial intelligence</p>
+            <div class="description">
+                <p>
+                    <strong>Welcome to the BC AI Survey Data Storytelling Project!</strong>
+                </p>
+                <p>This interactive dashboard presents semantic visualizations of open-ended responses from 1,001 British Columbians about artificial intelligence. Each 3D scatter plot represents survey responses as points in semantic space, where similar responses cluster together naturally.</p>
+                <p>
+                    🔍
+                    <strong>How to explore:</strong>
+                    Click on any visualization below to dive into the 3D interactive plots. Rotate, zoom, and hover over points to discover the authentic voices and perspectives of BC residents.
+                </p>
+            </div>
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-number">1,001</div>
+                    <div class="stat-label">Survey Responses</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">16</div>
+                    <div class="stat-label">Text Questions</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">3D</div>
+                    <div class="stat-label">Semantic Space</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">AI-Powered</div>
+                    <div class="stat-label">Embeddings</div>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="visualization-card">
+                    <div class="card-title">🎨 AI & Art Perspectives</div>
+                    <div class="card-description">How do BC residents feel about AI's role in creative fields and artistic expression?</div>
+                    <a href="tsne_visualizations_3d_silhouette_focus_sized/page_Q5_Art_vibe_AI_other_OE.html" class="view-button">Explore Creativity →</a>
+                </div>
+                <div class="visualization-card">
+                    <div class="card-title">🏥 AI Helping Communities</div>
+                    <div class="card-description">Text responses about how AI can help British Columbia communities thrive.</div>
+                    <a href="tsne_visualizations_3d_silhouette_focus_sized/page_Q8_AI_helping_BC_community_text_OE.html" class="view-button">View Community Impact →</a>
+                </div>
+                <div class="visualization-card">
+                    <div class="card-title">🎥 Community Video Insights</div>
+                    <div class="card-description">Video transcriptions about AI's potential to help BC communities.</div>
+                    <a href="tsne_visualizations_3d_silhouette_focus_sized/page_Q8_AI_helping_BC_community_video_OE_transcription.html" class="view-button">Watch Perspectives →</a>
+                </div>
+                <div class="visualization-card">
+                    <div class="card-title">⚡ AI Superpowers</div>
+                    <div class="card-description">If AI had superpowers, how would British Columbians want them used for their communities?</div>
+                    <a href="tsne_visualizations_3d_silhouette_focus_sized/page_Q10_AI_superpower_to_help_community_other_OE.html" class="view-button">Explore Superpowers →</a>
+                </div>
+                <div class="visualization-card">
+                    <div class="card-title">😰 AI Impact Worries</div>
+                    <div class="card-description">What concerns do BC residents have about AI's impact on society and their lives?</div>
+                    <a href="tsne_visualizations_3d_silhouette_focus_sized/page_Q13_AI_impact_worries_text_OE.html" class="view-button">Understand Concerns →</a>
+                </div>
+                <div class="visualization-card">
+                    <div class="card-title">🎬 Video Worries</div>
+                    <div class="card-description">Video transcriptions of British Columbians expressing their AI-related worries.</div>
+                    <a href="tsne_visualizations_3d_silhouette_focus_sized/page_Q13_AI_impact_worries_videos_OE_transcription.html" class="view-button">Hear Concerns →</a>
+                </div>
+                <div class="visualization-card">
+                    <div class="card-title">🏛️ Advice to BC Leaders</div>
+                    <div class="card-description">What guidance do citizens want to give BC leaders about AI governance and policy?</div>
+                    <a href="tsne_visualizations_3d_silhouette_focus_sized/page_Q17_Advice_BC_Leaders_text_OE.html" class="view-button">Read Advice →</a>
+                </div>
+                <div class="visualization-card">
+                    <div class="card-title">🎙️ Leadership Video Messages</div>
+                    <div class="card-description">Video transcriptions of advice and messages for BC's political leaders.</div>
+                    <a href="tsne_visualizations_3d_silhouette_focus_sized/page_Q17_Advice_BC_Leaders_video_OE_transcription.html" class="view-button">Listen to Voices →</a>
+                </div>
+                <div class="visualization-card">
+                    <div class="card-title">🔮 BC's AI Future</div>
+                    <div class="card-description">What matters most to British Columbians when thinking about the province's AI future?</div>
+                    <a href="tsne_visualizations_3d_silhouette_focus_sized/page_Q15_Matters_most_BC_AI_future_other_OE.html" class="view-button">Shape the Future →</a>
+                </div>
+                <div class="visualization-card">
+                    <div class="card-title">🏔️ Indigenous AI Involvement</div>
+                    <div class="card-description">Perspectives on how Indigenous communities should be involved in BC's AI development.</div>
+                    <a href="tsne_visualizations_3d_silhouette_focus_sized/page_Q16_Indigenous_communities_involvement_AI_text_OE.html" class="view-button">Honor Voices →</a>
+                </div>
+                <div class="visualization-card">
+                    <div class="card-title">🎥 Indigenous Video Perspectives</div>
+                    <div class="card-description">Video insights about Indigenous communities and AI in British Columbia.</div>
+                    <a href="tsne_visualizations_3d_silhouette_focus_sized/page_Q16_Indigenous_communities_involvement_AI_video_OE_transcription.html" class="view-button">Learn More →</a>
+                </div>
+                <div class="visualization-card">
+                    <div class="card-title">✅ Positive AI Sectors</div>
+                    <div class="card-description">Which sectors do BC residents think AI is making a positive impact in?</div>
+                    <a href="tsne_visualizations_3d_silhouette_focus_sized/page_Q4A_Sector_AI_making_a_positive_impact_other_OE.html" class="view-button">See Positives →</a>
+                </div>
+                <div class="visualization-card">
+                    <div class="card-title">❌ Negative AI Sectors</div>
+                    <div class="card-description">Where do British Columbians see AI making negative impacts on society?</div>
+                    <a href="tsne_visualizations_3d_silhouette_focus_sized/page_Q4B_Sector_AI_making_a_negative_impact_other_OE.html" class="view-button">Examine Negatives →</a>
+                </div>
+                <div class="visualization-card">
+                    <div class="card-title">🏆 Who Benefits from AI</div>
+                    <div class="card-description">Who do BC residents think gains the most from advances in artificial intelligence?</div>
+                    <a href="tsne_visualizations_3d_silhouette_focus_sized/page_Q11_Gainer_advances_in_AI_other_OE.html" class="view-button">Identify Winners →</a>
+                </div>
+                <div class="visualization-card">
+                    <div class="card-title">🛡️ Most Trustworthy AI</div>
+                    <div class="card-description">What AI applications do British Columbians trust the most?</div>
+                    <a href="tsne_visualizations_3d_silhouette_focus_sized/page_Q12_Most_trustworthy_advances_in_AI_other_OE.html" class="view-button">Build Trust →</a>
+                </div>
+                <div class="visualization-card">
+                    <div class="card-title">🦎 AI Experience Stories</div>
+                    <div class="card-description">Personal descriptions of how BC residents relate to and experience AI technology.</div>
+                    <a href="tsne_visualizations_3d_silhouette_focus_sized/page_Q2_Experience_with_AI_animal_other_OE.html" class="view-button">Share Experiences →</a>
+                </div>
+            </div>
+            <div class="methodology">
+                <h3>🔬 Methodology</h3>
+                <p>
+                    <strong>Semantic Embeddings:</strong>
+                    Each text response was converted to a 3,072-dimensional vector using OpenAI's text-embedding-3-large model, capturing semantic meaning.
+                </p>
+                <p>
+                    <strong>Dimensionality Reduction:</strong>
+                    t-SNE algorithm reduced high-dimensional embeddings to 3D coordinates while preserving local structure and clustering patterns.
+                </p>
+                <p>
+                    <strong>Optimal Clustering:</strong>
+                    K-Means clustering with silhouette score optimization automatically determined the most meaningful thematic groupings.
+                </p>
+                <p>
+                    <strong>Frequency Visualization:</strong>
+                    Point sizes represent response frequency (cube root scaling for volume), positioned at cluster centroids with hover details.
+                </p>
+                <p>
+                    <strong>Interactive Exploration:</strong>
+                    Each 3D visualization supports rotation, zooming, and hover inspection of original response text and cluster information.
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
